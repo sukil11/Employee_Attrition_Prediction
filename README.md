@@ -11,4 +11,4 @@ This project analyzes employee attrition and builds a predictive model to identi
 
 ---
 
-This project will help you gain hands-on experience in **data preprocessing, EDA, machine learning, and deployment**, making it a great addition to your portfolio!
+This project will help you gain hands-on experience in **data preprocessing, EDA, machine learning, and deployment**, making it a great addition to our portfolio!
