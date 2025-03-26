@@ -5,7 +5,6 @@ from sklearn.preprocessing import StandardScaler
 
 # Load pre-trained models and scaler
 rf_model = joblib.load('random_forest_model.joblib')
-dt_model = joblib.load('decision_tree_model.joblib')
 scaler = joblib.load('scaler.joblib')
 
 # Set the background image
@@ -74,7 +73,7 @@ user_input_scaled = scaler.transform(user_input_encoded)
 
 # Predictions
 rf_pred = rf_model.predict(user_input_scaled)
-dt_pred = dt_model.predict(user_input_scaled)
+
 
 # Display predictions
 st.subheader("Predictions")
@@ -84,7 +83,4 @@ if rf_pred == 1:
 else:
     st.write("Random Forest Model Prediction: Employee will stay.")
 
-if dt_pred == 1:
-    st.write("Decision Tree Model Prediction: Employee will leave.")
-else:
-    st.write("Decision Tree Model Prediction: Employee will stay.")
+
